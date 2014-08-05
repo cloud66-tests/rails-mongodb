@@ -1,16 +1,18 @@
 production: 
   rails: 
-    server:
-      unique_name: rails1
-      vendor: 'digitalocean'
-      region: '4'
-      size: '62'
+    servers:
+      - server:
+          unique_name: rails1
+          vendor: 'digitalocean'
+          region: '4'
+          size: '62'
     configuration:
       use_asset_pipeline: true
       ruby_version: 2.1.2
   mongodb:
-    server: 
-      unique_name: mongodb1
-      vendor: 'digitalocean'
-      region: '4'
-      size: '62'
+    servers:
+      - server: 
+          unique_name: mongodb1
+          vendor: 'digitalocean'
+          region: '4'
+          size: '62'
